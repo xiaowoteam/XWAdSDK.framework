@@ -1,0 +1,6 @@
+framework module XWAdSDK {
+  umbrella header "XWAdSDK.h"
+
+  export *
+  module * { export * }
+}
