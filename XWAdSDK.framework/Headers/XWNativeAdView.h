@@ -26,9 +26,13 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, weak, nullable) id<XWNativeAdViewDelegate> delegate;
 @property (nonatomic, strong, readonly) UIView *mediaView;
 @property (nonatomic, strong, readonly) UIImageView *logoView;
+@property (nonatomic, strong, readonly) UIImageView *logoADView;
 
 @property (nonatomic, assign, readonly) CGFloat logoImageViewDefaultWidth;
 @property (nonatomic, assign, readonly) CGFloat logoImageViewDefaultHeight;
+
+@property (nonatomic, assign, readonly) CGFloat logoADImageViewDefaultWidth;
+@property (nonatomic, assign, readonly) CGFloat logoADImageViewDefaultHeight;
 
 - (void)refreshData:(XWNativeAdDataObject *)nativeAdDataObject;
 - (void)registerDataObjectWithClickableViews:(NSArray<UIView *> *)clickableViews;
