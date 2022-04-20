@@ -29,6 +29,8 @@ typedef NS_ENUM(NSInteger, XWNativeAdCreativeType) {
     XWNativeAdCreativeType_CSJ_ImagePortrait = (3 << 24) | 16,
     XWNativeAdCreativeType_CSJ_SquareImage = (3 << 24) | 33,//SquareImage Currently it exists only in the oversea now. V3200 add
     XWNativeAdCreativeType_CSJ_SquareVideo = (3 << 24) | 50,//SquareVideo Currently it exists only in the oversea now. V3200 add
+    XWNativeAdCreativeType_CSJ_UnionSplashVideo = (3 << 24) | 154, // Video splash, V3800 add
+    XWNativeAdCreativeType_CSJ_UnionVerticalImage = (3 << 24) | 173, // vertical picture
 };
 
 @interface XWNativeAdDataObject : NSObject
