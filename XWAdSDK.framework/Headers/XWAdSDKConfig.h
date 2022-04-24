@@ -19,7 +19,8 @@ typedef NS_ENUM(NSUInteger, XWAdSdkUnionType) {
     XWAdSdkUnionTypeSIG = 12, //sig
     XWAdSdkUnionTypeIQY = 13, //爱奇艺
     XWAdSdkUnionTypeJD = 14, //京东
-    XWAdSdkUnionTypeLY = 16, //京东
+    XWAdSdkUnionTypeKLN = 17, //游可赢
+    XWAdSdkUnionTypeLY = 18, //LY
 };
 
 @interface XWAdSDKConfig : NSObject

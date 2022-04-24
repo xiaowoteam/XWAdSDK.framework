@@ -11,6 +11,8 @@
 NS_ASSUME_NONNULL_BEGIN
 
 typedef NS_ENUM(NSInteger, XWNativeAdCreativeType) {
+    XWNativeAdCreativeTypeUnkown = 0,
+    
     XWNativeAdCreativeType_ADX_NONE = (1 << 24) | 0,
     XWNativeAdCreativeType_ADX_TXT = (1 << 24) | 1,//TXT 纯文字
     XWNativeAdCreativeType_ADX_IMG = (1 << 24) | 2,//IMG 纯图片
@@ -31,6 +33,20 @@ typedef NS_ENUM(NSInteger, XWNativeAdCreativeType) {
     XWNativeAdCreativeType_CSJ_SquareVideo = (3 << 24) | 50,//SquareVideo Currently it exists only in the oversea now. V3200 add
     XWNativeAdCreativeType_CSJ_UnionSplashVideo = (3 << 24) | 154, // Video splash, V3800 add
     XWNativeAdCreativeType_CSJ_UnionVerticalImage = (3 << 24) | 173, // vertical picture
+    
+    XWNativeAdCreativeType_KS_AdMaterialTypeVideo = (4 << 24) | 1,      // video
+    XWNativeAdCreativeType_KS_AdMaterialTypeSingle = (4 << 24) | 2,      // single image
+    XWNativeAdCreativeType_KS_AdMaterialTypeAtlas = (4 << 24) | 3,      // multiple image
+    
+    /// 原生自渲染-横版大图16：9
+    XWNativeAdCreativeType_KLN_HorBigImage = (5 << 24) | 1001,
+    /// 原生自渲染-横版视频16：9
+    XWNativeAdCreativeType_KLN_HorVideo = (5 << 24) | 1002,
+    
+    XWNativeAdCreativeType_BD_NORMAL = (6 << 24) | 0, // 一般图文或图片广告
+    XWNativeAdCreativeType_BD_VIDEO = (6 << 24) | 1, // 视频广告，需开发者增加播放器支持
+    XWNativeAdCreativeType_BD_HTML = (6 << 24) | 2, // html模版广告
+    XWNativeAdCreativeType_BD_GIF = (6 << 24) | 3 //GIF广告
 };
 
 @interface XWNativeAdDataObject : NSObject
